@@ -30,3 +30,4 @@ function searchMedicine() {
 function findStore() {
     window.open("https://www.google.com/maps/search/Jan+Aushadhi+Store+near+me");
 }
+<p style="color:blue;"><b>Available at Jan Aushadhi Store</b></p>
