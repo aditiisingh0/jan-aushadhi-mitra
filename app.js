@@ -1,10 +1,10 @@
 let medicines = [];
 
 fetch('medicines.json')
-    .then(response => response.json())
-    .then(data => {
-        medicines = data;
-    });
+.then(response => response.json())
+.then(data => {
+    medicines = data;
+});
 
 function searchMedicine() {
     let input = document.getElementById("medicineInput").value.toLowerCase();
@@ -15,14 +15,15 @@ function searchMedicine() {
     if (found) {
         let savings = found.brand_price - found.generic_price;
         resultDiv.innerHTML = `
-            <p><b>Generic Name:</b> ${found.generic}</p>
-            <p><b>Brand Price:</b> ₹${found.brand_price}</p>
-            <p><b>Generic Price:</b> ₹${found.generic_price}</p>
-            <p><b>You Save:</b> ₹${savings}</p>
-            <p><b>Use:</b> ${found.use}</p>
+            <h3>${found.brand}</h3>
+            <p>Generic: ${found.generic}</p>
+            <p>Brand Price: ₹${found.brand_price}</p>
+            <p>Generic Price: ₹${found.generic_price}</p>
+            <p style="color:green;"><b>You Save ₹${savings}</b></p>
+            <p>Use: ${found.use}</p>
         `;
     } else {
-        resultDiv.innerHTML = "Medicine not found in database";
+        resultDiv.innerHTML = "Medicine not found";
     }
 }
 
