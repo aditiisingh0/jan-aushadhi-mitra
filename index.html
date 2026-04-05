@@ -1,79 +1,140 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jan Aushadhi Mitra</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jan Aushadhi Mitra – Affordable Medicines for Every Indian</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-<div class="container">
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <div class="nav-inner">
+      <div class="nav-logo">
+        <span class="nav-logo-icon">💊</span>
+        <span class="nav-logo-text">Jan Aushadhi <strong>Mitra</strong></span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#search-section">Search</a></li>
+        <li><a href="#store-section">Find Store</a></li>
+        <li><a href="#features-section">Why Generic?</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-bg-circle hero-bg-circle--green"></div>
+    <div class="hero-bg-circle hero-bg-circle--orange"></div>
 
     <div class="badge">🇮🇳 Government of India Initiative</div>
 
-    <h1>Jan Aushadhi <span>Mitra</span></h1>
-    <p class="subtitle">Affordable, quality generic medicines for every Indian family</p>
+    <div class="logo-row">
+      <div class="logo-icon">💊</div>
+      <h1 class="hero-title">Jan Aushadhi<br /><span>Mitra</span></h1>
+    </div>
 
-    <!-- Search Box Card -->
+    <p class="hero-tagline">Affordable, quality generic medicines for every Indian family</p>
+
+    <div class="pills">
+      <span class="pill">💰 Save up to 90%</span>
+      <span class="pill">✅ Quality Assured</span>
+      <span class="pill">🏥 9,000+ Stores</span>
+    </div>
+  </section>
+
+  <!-- ===== SEARCH CARD ===== -->
+  <section class="search-section" id="search-section">
     <div class="search-card">
-        <input type="text" id="medicineInput" placeholder="Search medicine like Crocin, Dolo...">
-        <button onclick="searchMedicine()">Search</button>
+      <!-- Medicine Search -->
+      <div class="search-label">🔍 Search Medicines</div>
+      <div class="search-row">
+        <input
+          id="medicine-input"
+          class="search-input"
+          type="text"
+          placeholder="e.g. Paracetamol, Metformin, Amoxicillin…"
+          autocomplete="off"
+        />
+        <button id="search-btn" class="btn btn-green">Search</button>
+      </div>
+      <div id="search-results" class="search-results hidden"></div>
 
-        <div id="result"></div>
+      <!-- Divider -->
+      <div class="divider-row">
+        <div class="divider-line"></div>
+        <span class="divider-text">OR FIND A STORE</span>
+        <div class="divider-line"></div>
+      </div>
 
-        <button class="store-btn" onclick="findStore()">Find Jan Aushadhi Store Near You</button>
+      <!-- Store Locator -->
+      <div id="store-section">
+        <input
+          id="location-input"
+          class="location-input"
+          type="text"
+          placeholder="Enter your city or pincode…"
+        />
+        <button id="store-btn" class="btn btn-orange btn-full">📍 Find Jan Aushadhi Store Near Me</button>
+      </div>
     </div>
 
-    <!-- Stats -->
-    <!-- Stats -->
-<div class="stats">
-    <div class="stat">
-        <h2>1900+</h2>
-        <p>Medicines</p>
+    <!-- Stats Strip -->
+    <div class="stats-strip">
+      <div class="stat-item">
+        <div class="stat-num">1,900+</div>
+        <div class="stat-lbl">Medicines</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">9,000+</div>
+        <div class="stat-lbl">Stores</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">90%</div>
+        <div class="stat-lbl">Savings</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-num">36+</div>
+        <div class="stat-lbl">States</div>
+      </div>
     </div>
-    <div class="stat">
-        <h2>9000+</h2>
-        <p>Stores</p>
-    </div>
-    <div class="stat">
-        <h2>90%</h2>
-        <p>Savings</p>
-    </div>
-    <div class="stat">
-        <h2>36+</h2>
-        <p>States</p>
-    </div>
-</div>
+  </section>
 
-<h2 class="why">Why Choose Generic Medicines?</h2>
-
-<div class="features">
-    <div class="feature-box">
-        <h3>Same Formula</h3>
-        <p>Same active ingredients as branded medicines.</p>
+  <!-- ===== FEATURES ===== -->
+  <section class="features-section" id="features-section">
+    <h2 class="section-title">Why Choose Generic?</h2>
+    <div class="cards-grid">
+      <div class="feat-card">
+        <div class="feat-icon" style="background:#e8f5e9;">💊</div>
+        <div class="feat-title">Same Formula</div>
+        <p class="feat-desc">Identical active ingredients as branded medicines — same efficacy, same safety.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:#fff3e0;">💸</div>
+        <div class="feat-title">Huge Savings</div>
+        <p class="feat-desc">Save up to 90% compared to branded drugs. Lighter on your wallet every month.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:#fce4ec;">🏆</div>
+        <div class="feat-title">Quality Assured</div>
+        <p class="feat-desc">Every medicine tested at NABL-accredited labs before reaching shelves.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon" style="background:#e3f2fd;">📍</div>
+        <div class="feat-title">Near You</div>
+        <p class="feat-desc">Over 9,000 Jan Aushadhi Kendras across India — and growing every day.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="feature-box">
-        <h3>Huge Savings</h3>
-        <p>Save up to 90% on medicine costs.</p>
-    </div>
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>A <strong>Government of India</strong> initiative under the Jan Aushadhi Scheme &bull; Ministry of Chemicals &amp; Fertilizers</p>
+    <p class="footer-sub">जन औषधि – दाम कम, दवाई उत्तम</p>
+  </footer>
 
-    <div class="feature-box">
-        <h3>Quality Assured</h3>
-        <p>Government tested and approved medicines.</p>
-    </div>
-
-    <div class="feature-box">
-        <h3>Near You</h3>
-        <p>Jan Aushadhi stores available across India.</p>
-    </div>
-</div>
-
-    <div class="footer">
-        Ministry of Chemicals & Fertilizers | Government of India
-    </div>
-
-</div>
-
-<script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
