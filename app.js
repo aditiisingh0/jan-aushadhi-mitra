@@ -4,6 +4,9 @@ fetch('medicines.json')
 .then(response => response.json())
 .then(data => {
     medicines = data;
+})
+.catch(error => {
+    console.log("Error loading medicines:", error);
 });
 
 function searchMedicine() {
@@ -15,11 +18,11 @@ function searchMedicine() {
     if (found) {
         let savings = found.brand_price - found.generic_price;
         resultDiv.innerHTML = `
-            <h3>${found.brand}</h3>
+            <h2>${found.brand}</h2>
             <p><b>Generic:</b> ${found.generic}</p>
             <p>Brand Price: ₹${found.brand_price}</p>
             <p>Generic Price: ₹${found.generic_price}</p>
-            <p style="color:green;"><b>You Save ₹${savings}</b></p>
+            <p style="color:green;font-size:20px;"><b>You Save ₹${savings}</b></p>
             <p>Use: ${found.use}</p>
             <p style="color:blue;"><b>Available at Jan Aushadhi Store</b></p>
         `;
