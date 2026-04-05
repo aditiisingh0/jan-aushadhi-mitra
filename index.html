@@ -1,40 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <div class="header">
-    <img src="modi.png" class="modi">
-    <div>
-        <h1>JAN AUSHADHI MITRA</h1>
-        <p>Affordable Medicines for Every Indian</p>
-        <p><b>Save Money • Stay Healthy • Choose Generic</b></p>
-    </div>
-</div>
+    <title>Jan Aushadhi Mitra</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+    <!-- Header -->
     <div class="header">
         <img src="modi.png" class="modi">
         <div>
             <h1>JAN AUSHADHI MITRA</h1>
             <p>Affordable Medicines for Every Indian</p>
+            <p><b>Save Money • Stay Healthy • Choose Generic</b></p>
         </div>
     </div>
 
+    <!-- Search -->
     <div class="search">
         <input type="text" id="medicineInput" placeholder="Enter Medicine Name">
         <button onclick="searchMedicine()">Search</button>
     </div>
 
+    <!-- Result -->
     <div id="result" class="card"></div>
 
+    <!-- Store -->
     <div class="store">
         <h2>Find Jan Aushadhi Store Near You</h2>
         <button onclick="findStore()">Find Store</button>
     </div>
 
-    <script src="app.js"></script>
+    <!-- Footer -->
     <div class="footer">
-    <p>Government of India Initiative - Jan Aushadhi Scheme</p>
-</div>
+        <p>Government of India Initiative - Jan Aushadhi Scheme</p>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
