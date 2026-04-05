@@ -24,7 +24,7 @@ function searchMedicine() {
             <p style="color:blue;"><b>Available at Jan Aushadhi Store</b></p>
         `;
     } else {
-        resultDiv.innerHTML = "Medicine not found in database";
+        resultDiv.innerHTML = "Medicine not found";
     }
 }
 
