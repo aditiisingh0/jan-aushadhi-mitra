@@ -15,11 +15,9 @@ function searchMedicine() {
     if (found) {
         let savings = found.brand_price - found.generic_price;
         resultDiv.innerHTML = `
-            <h3>${found.brand}</h3>
+            <p><b>${found.brand}</b></p>
             <p>Generic: ${found.generic}</p>
-            <p>Brand Price: ₹${found.brand_price}</p>
-            <p>Generic Price: ₹${found.generic_price}</p>
-            <p style="color:green;"><b>You Save ₹${savings}</b></p>
+            <p>You Save ₹${savings}</p>
         `;
     } else {
         resultDiv.innerHTML = "Medicine not found";
