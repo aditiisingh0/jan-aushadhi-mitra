@@ -7,11 +7,32 @@
     "use": "Fever and pain relief"
   },
   {
+    "brand": "Calpol",
+    "generic": "Paracetamol",
+    "brand_price": 25,
+    "generic_price": 5,
+    "use": "Fever"
+  },
+  {
+    "brand": "Dolo",
+    "generic": "Paracetamol",
+    "brand_price": 28,
+    "generic_price": 5,
+    "use": "Fever and body pain"
+  },
+  {
     "brand": "Augmentin",
     "generic": "Amoxicillin",
     "brand_price": 180,
     "generic_price": 35,
     "use": "Bacterial infection"
+  },
+  {
+    "brand": "Azithral",
+    "generic": "Azithromycin",
+    "brand_price": 150,
+    "generic_price": 40,
+    "use": "Infection"
   },
   {
     "brand": "Pantocid",
@@ -21,17 +42,87 @@
     "use": "Acidity"
   },
   {
-    "brand": "Calpol",
-    "generic": "Paracetamol",
-    "brand_price": 25,
-    "generic_price": 5,
-    "use": "Fever"
+    "brand": "Rantac",
+    "generic": "Ranitidine",
+    "brand_price": 90,
+    "generic_price": 12,
+    "use": "Acidity"
   },
   {
-    "brand": "Azithral",
-    "generic": "Azithromycin",
+    "brand": "Glycomet",
+    "generic": "Metformin",
+    "brand_price": 85,
+    "generic_price": 20,
+    "use": "Diabetes"
+  },
+  {
+    "brand": "Amlong",
+    "generic": "Amlodipine",
+    "brand_price": 70,
+    "generic_price": 15,
+    "use": "Blood pressure"
+  },
+  {
+    "brand": "Telma",
+    "generic": "Telmisartan",
+    "brand_price": 110,
+    "generic_price": 25,
+    "use": "Blood pressure"
+  },
+  {
+    "brand": "Lipitor",
+    "generic": "Atorvastatin",
     "brand_price": 150,
-    "generic_price": 40,
-    "use": "Infection"
+    "generic_price": 30,
+    "use": "Cholesterol"
+  },
+  {
+    "brand": "Ecosprin",
+    "generic": "Aspirin",
+    "brand_price": 40,
+    "generic_price": 8,
+    "use": "Heart and blood thinner"
+  },
+  {
+    "brand": "Zincovit",
+    "generic": "Multivitamin",
+    "brand_price": 95,
+    "generic_price": 20,
+    "use": "Vitamin supplement"
+  },
+  {
+    "brand": "Shelcal",
+    "generic": "Calcium Carbonate",
+    "brand_price": 120,
+    "generic_price": 30,
+    "use": "Calcium supplement"
+  },
+  {
+    "brand": "Benadryl",
+    "generic": "Diphenhydramine",
+    "brand_price": 110,
+    "generic_price": 25,
+    "use": "Cough and cold"
+  },
+  {
+    "brand": "Voveran",
+    "generic": "Diclofenac",
+    "brand_price": 95,
+    "generic_price": 18,
+    "use": "Pain relief"
+  },
+  {
+    "brand": "Combiflam",
+    "generic": "Ibuprofen + Paracetamol",
+    "brand_price": 50,
+    "generic_price": 12,
+    "use": "Pain and fever"
+  },
+  {
+    "brand": "ORS",
+    "generic": "Oral Rehydration Salts",
+    "brand_price": 35,
+    "generic_price": 10,
+    "use": "Dehydration"
   }
 ]
