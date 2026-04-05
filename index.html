@@ -6,34 +6,60 @@
 </head>
 <body>
 
-    <!-- Header -->
-    <div class="header">
-        <img src="modi.png" class="modi">
-        <div>
-            <h1>JAN AUSHADHI MITRA</h1>
-            <p>Affordable Medicines for Every Indian</p>
-            <p><b>Save Money • Stay Healthy • Choose Generic</b></p>
+    <div class="container">
+
+        <div class="top-badge">Government of India Initiative</div>
+
+        <div class="header">
+            <img src="modi.png" class="modi">
+            <h1>Jan Aushadhi <span>Mitra</span></h1>
+            <p>Affordable, quality generic medicines for every Indian family</p>
         </div>
-    </div>
 
-    <!-- Search -->
-    <div class="search">
-        <input type="text" id="medicineInput" placeholder="Enter Medicine Name">
-        <button onclick="searchMedicine()">Search</button>
-    </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <input type="text" id="medicineInput" placeholder="Search medicine like Crocin, Dolo...">
+            <button onclick="searchMedicine()">Search</button>
+        </div>
 
-    <!-- Result -->
-    <div id="result" class="card"></div>
+        <div id="result" class="result-box"></div>
 
-    <!-- Store -->
-    <div class="store">
-        <h2>Find Jan Aushadhi Store Near You</h2>
-        <button onclick="findStore()">Find Store</button>
-    </div>
+        <!-- Stats -->
+        <div class="stats">
+            <div class="stat-card">₹ Save up to 90%</div>
+            <div class="stat-card">9000+ Stores</div>
+            <div class="stat-card">Quality Assured</div>
+        </div>
 
-    <!-- Footer -->
-    <div class="footer">
-        <p>Government of India Initiative - Jan Aushadhi Scheme</p>
+        <!-- Why Generic -->
+        <h2>Why Choose Generic Medicines?</h2>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Same Formula</h3>
+                <p>Same active ingredients as branded medicines.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Huge Savings</h3>
+                <p>Save up to 90% on medicine costs.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>Quality Assured</h3>
+                <p>Government tested and approved medicines.</p>
+            </div>
+        </div>
+
+        <!-- Store -->
+        <div class="store">
+            <button onclick="findStore()">Find Jan Aushadhi Store Near You</button>
+        </div>
+
+        <div class="footer">
+            <p>Ministry of Chemicals & Fertilizers | Government of India</p>
+        </div>
+
     </div>
 
     <script src="app.js"></script>
