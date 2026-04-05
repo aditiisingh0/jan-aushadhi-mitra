@@ -1,0 +1,37 @@
+[
+  {
+    "brand": "Crocin",
+    "generic": "Paracetamol",
+    "brand_price": 30,
+    "generic_price": 5,
+    "use": "Fever and pain relief"
+  },
+  {
+    "brand": "Augmentin",
+    "generic": "Amoxicillin",
+    "brand_price": 180,
+    "generic_price": 35,
+    "use": "Bacterial infection"
+  },
+  {
+    "brand": "Pantocid",
+    "generic": "Pantoprazole",
+    "brand_price": 120,
+    "generic_price": 18,
+    "use": "Acidity"
+  },
+  {
+    "brand": "Calpol",
+    "generic": "Paracetamol",
+    "brand_price": 25,
+    "generic_price": 5,
+    "use": "Fever"
+  },
+  {
+    "brand": "Azithral",
+    "generic": "Azithromycin",
+    "brand_price": 150,
+    "generic_price": 40,
+    "use": "Infection"
+  }
+]
