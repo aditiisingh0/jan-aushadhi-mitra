@@ -6,16 +6,27 @@
 </head>
 <body>
 
-    <h1>Jan Aushadhi Mitra</h1>
-    <p>Find Generic Medicines & Save Money</p>
+    <!-- Header Section -->
+    <div class="header">
+        <img src="modi.jpg" class="modi-img">
+        <h1>Jan Aushadhi Mitra</h1>
+        <p>Affordable Medicines for Every Indian</p>
+    </div>
 
-    <input type="text" id="medicineInput" placeholder="Enter medicine name">
-    <button onclick="searchMedicine()">Search</button>
+    <!-- Search Section -->
+    <div class="search-box">
+        <input type="text" id="medicineInput" placeholder="Enter medicine name">
+        <button onclick="searchMedicine()">Search</button>
+    </div>
 
-    <div id="result"></div>
+    <!-- Result -->
+    <div id="result" class="result-card"></div>
 
-    <h2>Find Jan Aushadhi Store Near You</h2>
-    <button onclick="findStore()">Find Store</button>
+    <!-- Store Locator -->
+    <div class="store">
+        <h2>Find Jan Aushadhi Store Near You</h2>
+        <button onclick="findStore()">Find Store</button>
+    </div>
 
     <script src="app.js"></script>
 </body>
