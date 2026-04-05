@@ -2,12 +2,10 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-
-    /* Soft tricolour background */
     background: linear-gradient(
         135deg,
         rgba(255,153,51,0.15),
-        rgba(255,255,255,0.9),
+        rgba(255,255,255,0.95),
         rgba(19,136,8,0.15)
     );
 }
@@ -37,7 +35,7 @@ p {
     color: #333;
 }
 
-/* Search Box */
+/* Search */
 .search {
     margin-top: 30px;
 }
@@ -59,7 +57,6 @@ button {
     font-size: 16px;
     cursor: pointer;
     margin-left: 10px;
-    transition: 0.3s;
 }
 
 button:hover {
@@ -79,13 +76,9 @@ button:hover {
     font-size: 18px;
 }
 
-/* Store Section */
+/* Store */
 .store {
     margin-top: 30px;
-}
-
-.store h2 {
-    font-size: 24px;
 }
 
 /* Footer */
