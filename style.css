@@ -1,6 +1,6 @@
 body {
-    font-family: Arial;
-    background: linear-gradient(135deg,#f5f7fa,#e4efe9);
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #e4efe9);
     text-align: center;
     margin: 0;
 }
@@ -13,9 +13,9 @@ body {
 }
 
 .badge {
-    display: inline-block;
     background: #e6f4ea;
     color: green;
+    display: inline-block;
     padding: 8px 15px;
     border-radius: 20px;
     font-size: 14px;
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 36px;
+    font-size: 38px;
     margin: 10px;
 }
 
@@ -36,59 +36,68 @@ h1 span {
     margin-bottom: 20px;
 }
 
-/* Card */
-.card {
+/* Search Card */
+.search-card {
     background: white;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
 }
 
 input {
-    width: 80%;
+    width: 70%;
     padding: 12px;
-    margin: 10px;
     border-radius: 8px;
     border: 1px solid gray;
 }
 
 button {
-    padding: 12px 20px;
+    padding: 12px 18px;
     border: none;
     border-radius: 8px;
     background: green;
     color: white;
     cursor: pointer;
+    margin: 10px;
 }
 
 button:hover {
     background: darkgreen;
 }
 
+.store-btn {
+    width: 90%;
+    background: #0a8f2f;
+}
+
 /* Stats */
 .stats {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 20px;
 }
 
-.stat-box {
+.stat {
     background: white;
     padding: 15px;
-    width: 22%;
+    width: 30%;
     border-radius: 10px;
     box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
 }
 
 /* Features */
-.features {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    margin-top: 20px;
+.why {
+    margin-top: 30px;
 }
 
-.feature {
+.features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.feature-box {
     background: white;
     padding: 15px;
     border-radius: 10px;
@@ -96,7 +105,7 @@ button:hover {
 }
 
 .footer {
-    margin-top: 20px;
+    margin-top: 30px;
     font-size: 14px;
     color: gray;
 }
