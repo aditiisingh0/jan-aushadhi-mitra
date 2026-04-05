@@ -1,12 +1,167 @@
 [
-  {"brand":"Crocin","generic":"Paracetamol","brand_price":30,"generic_price":5,"use":"Fever"},
-  {"brand":"Dolo","generic":"Paracetamol","brand_price":28,"generic_price":5,"use":"Fever"},
-  {"brand":"Augmentin","generic":"Amoxicillin","brand_price":180,"generic_price":35,"use":"Infection"},
-  {"brand":"Pantocid","generic":"Pantoprazole","brand_price":120,"generic_price":18,"use":"Acidity"},
-  {"brand":"Glycomet","generic":"Metformin","brand_price":85,"generic_price":20,"use":"Diabetes"},
-  {"brand":"Amlong","generic":"Amlodipine","brand_price":70,"generic_price":15,"use":"Blood pressure"},
-  {"brand":"Telma","generic":"Telmisartan","brand_price":110,"generic_price":25,"use":"BP"},
-  {"brand":"Lipitor","generic":"Atorvastatin","brand_price":150,"generic_price":30,"use":"Cholesterol"},
-  {"brand":"Combiflam","generic":"Ibuprofen + Paracetamol","brand_price":50,"generic_price":12,"use":"Pain"},
-  {"brand":"ORS","generic":"Oral Rehydration Salts","brand_price":35,"generic_price":10,"use":"Dehydration"}
+  {
+    "id": 1,
+    "name": "Paracetamol 500mg",
+    "generic_name": "Paracetamol",
+    "category": "Analgesic / Antipyretic",
+    "uses": "Fever, headache, mild to moderate pain",
+    "jan_aushadhi_price": 2.50,
+    "branded_price": 22.00,
+    "branded_example": "Crocin 500mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 2,
+    "name": "Amoxicillin 500mg",
+    "generic_name": "Amoxicillin",
+    "category": "Antibiotic",
+    "uses": "Bacterial infections, throat, ear, urinary tract",
+    "jan_aushadhi_price": 18.00,
+    "branded_price": 135.00,
+    "branded_example": "Amoxil 500mg",
+    "unit": "strip of 10 capsules"
+  },
+  {
+    "id": 3,
+    "name": "Metformin 500mg",
+    "generic_name": "Metformin HCl",
+    "category": "Antidiabetic",
+    "uses": "Type 2 diabetes management",
+    "jan_aushadhi_price": 5.50,
+    "branded_price": 48.00,
+    "branded_example": "Glucophage 500mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 4,
+    "name": "Atorvastatin 10mg",
+    "generic_name": "Atorvastatin",
+    "category": "Cholesterol-lowering",
+    "uses": "High cholesterol, cardiovascular risk reduction",
+    "jan_aushadhi_price": 8.00,
+    "branded_price": 95.00,
+    "branded_example": "Lipitor 10mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 5,
+    "name": "Omeprazole 20mg",
+    "generic_name": "Omeprazole",
+    "category": "Antacid / PPI",
+    "uses": "Acidity, GERD, stomach ulcers",
+    "jan_aushadhi_price": 4.50,
+    "branded_price": 58.00,
+    "branded_example": "Omez 20mg",
+    "unit": "strip of 10 capsules"
+  },
+  {
+    "id": 6,
+    "name": "Azithromycin 500mg",
+    "generic_name": "Azithromycin",
+    "category": "Antibiotic",
+    "uses": "Respiratory infections, skin infections",
+    "jan_aushadhi_price": 12.00,
+    "branded_price": 110.00,
+    "branded_example": "Zithromax 500mg",
+    "unit": "strip of 3 tablets"
+  },
+  {
+    "id": 7,
+    "name": "Amlodipine 5mg",
+    "generic_name": "Amlodipine",
+    "category": "Antihypertensive",
+    "uses": "High blood pressure, angina",
+    "jan_aushadhi_price": 6.00,
+    "branded_price": 75.00,
+    "branded_example": "Norvasc 5mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 8,
+    "name": "Cetirizine 10mg",
+    "generic_name": "Cetirizine",
+    "category": "Antihistamine",
+    "uses": "Allergies, hay fever, urticaria",
+    "jan_aushadhi_price": 3.00,
+    "branded_price": 35.00,
+    "branded_example": "Zyrtec 10mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 9,
+    "name": "Pantoprazole 40mg",
+    "generic_name": "Pantoprazole",
+    "category": "Antacid / PPI",
+    "uses": "Acid reflux, gastric ulcers, GERD",
+    "jan_aushadhi_price": 5.00,
+    "branded_price": 62.00,
+    "branded_example": "Pantop 40mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 10,
+    "name": "Ibuprofen 400mg",
+    "generic_name": "Ibuprofen",
+    "category": "NSAID / Anti-inflammatory",
+    "uses": "Pain, fever, inflammation",
+    "jan_aushadhi_price": 4.00,
+    "branded_price": 40.00,
+    "branded_example": "Brufen 400mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 11,
+    "name": "Losartan 50mg",
+    "generic_name": "Losartan Potassium",
+    "category": "Antihypertensive",
+    "uses": "High blood pressure, kidney protection in diabetes",
+    "jan_aushadhi_price": 7.50,
+    "branded_price": 88.00,
+    "branded_example": "Cozaar 50mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 12,
+    "name": "Vitamin D3 60000 IU",
+    "generic_name": "Cholecalciferol",
+    "category": "Vitamin Supplement",
+    "uses": "Vitamin D deficiency, bone health",
+    "jan_aushadhi_price": 10.00,
+    "branded_price": 120.00,
+    "branded_example": "D-Rise 60K",
+    "unit": "sachet / soft gelatin capsule"
+  },
+  {
+    "id": 13,
+    "name": "Levothyroxine 50mcg",
+    "generic_name": "Levothyroxine Sodium",
+    "category": "Thyroid hormone",
+    "uses": "Hypothyroidism",
+    "jan_aushadhi_price": 9.00,
+    "branded_price": 75.00,
+    "branded_example": "Thyronorm 50mcg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 14,
+    "name": "Metronidazole 400mg",
+    "generic_name": "Metronidazole",
+    "category": "Antibiotic / Antiprotozoal",
+    "uses": "Bacterial and parasitic infections",
+    "jan_aushadhi_price": 5.50,
+    "branded_price": 50.00,
+    "branded_example": "Flagyl 400mg",
+    "unit": "strip of 10 tablets"
+  },
+  {
+    "id": 15,
+    "name": "Aspirin 75mg",
+    "generic_name": "Acetylsalicylic Acid",
+    "category": "Antiplatelet",
+    "uses": "Heart attack prevention, blood clot prevention",
+    "jan_aushadhi_price": 2.00,
+    "branded_price": 28.00,
+    "branded_example": "Ecosprin 75mg",
+    "unit": "strip of 10 tablets"
+  }
 ]
