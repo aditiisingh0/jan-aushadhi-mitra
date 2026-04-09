@@ -68,15 +68,39 @@ function findStore() {
   const location = document.getElementById("location-input").value.trim();
 
   if (!location) {
-    alert("Please enter your city name or pincode.");
+    // Try GPS location
+    if (!navigator.geolocation) {
+      alert("Please enter your city name or pincode.");
+      return;
+    }
+
+    const btn = document.getElementById("store-btn");
+    btn.textContent = "Detecting location...";
+    btn.disabled = true;
+
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude, longitude } = pos.coords;
+        // Open Google Maps with Jan Aushadhi search near coordinates
+        const url = `https://www.google.com/maps/search/Jan+Aushadhi+store/@${latitude},${longitude},14z`;
+        window.open(url, "_blank");
+        btn.textContent = "📍 Find Jan Aushadhi Store Near Me";
+        btn.disabled = false;
+      },
+      (err) => {
+        alert("Location access denied. Please enter your city or pincode.");
+        btn.textContent = "📍 Find Jan Aushadhi Store Near Me";
+        btn.disabled = false;
+      },
+      { timeout: 8000 }
+    );
     return;
   }
 
-  // Opens the official Jan Aushadhi store locator with the query
-  const url = `https://janaushadhi.gov.in/StoreLocater.aspx?Stateid=0&CityId=0&PinCode=${encodeURIComponent(location)}`;
+  // If text entered — use official locator
+  const url = `https://www.google.com/maps/search/Jan+Aushadhi+store+${encodeURIComponent(location)}`;
   window.open(url, "_blank");
 }
-
 // ── Event listeners ───────────────────────────────────────
 function initEventListeners() {
   const searchBtn = document.getElementById("search-btn");
